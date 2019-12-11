@@ -23,18 +23,18 @@ PAD-AS
 ## General and Getting Started
 
 
----
-<a id = "intro"></a> 
-## - Introduction
+    ---
+    <a id = "intro"></a> 
+    ## - Introduction
 
 
----
-<a id = "dependencies"></a> 
-## Dependencies
+    ---
+    <a id = "dependencies"></a> 
+    ## Dependencies
 
----
-<a id = "instalation"></a> 
-## Installation
+    ---
+    <a id = "instalation"></a> 
+    ## Installation
 
 
 ---
