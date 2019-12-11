@@ -22,55 +22,56 @@ PAD-AS
 <a id = "getting-started"></a> 
 ## General and Getting Started
 
+---
+<a id = "intro"></a> 
+### Introduction
+This project was started because I play the JP version of PAD and I wanted to play using 2 player mode.  I got an emulator (NOX) on my pc but playing PAD on my PC was hard, so I thought "hey, I should make a solver that plays the game for me, then I can play multiplayer with my pc and smartphone"
 
-    ---
-    <a id = "intro"></a> 
-    ## - Introduction
+---
+<a id = "dependencies"></a> 
+### Dependencies
 
-
-    ---
-    <a id = "dependencies"></a> 
-    ## Dependencies
-
-    ---
-    <a id = "instalation"></a> 
-    ## Installation
+---
+<a id = "instalation"></a> 
+### Installation
 
 
 ---
 <a id = "how-does-it-work"></a> 
 ## How Does PAD_AlgorithmicSolver Work?
+ - 1.) 
+
 
 ---
 <a id = "general-overview"></a> 
-## General overview of the Algorithm
+### General overview of the Algorithm
 
 
 ---
 <a id = "techniques"></a> 
-## Techniques
+### Techniques
 
 
 
 ---
 <a id = "performance"></a> 
-## Performance
+### Performance
 
 
 ---
 <a id = "explanation"></a> 
-## Explanation
+## Explanatory Notes
 
 
 ---
 <a id = "option-gui"></a>
-## Options in the GUI
+### Options in the GUI
 
 
 
 ---
 <a id = "limitation"></a>
-## Known Limitations
+### Known Limitations
 - Obviously new gimics are limitations
 - I still haven't modified the priority to have bomb drops included
 - 7x6, 5x4 is still in test phase
