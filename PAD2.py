@@ -32,7 +32,7 @@ def clock(func): # version 2, page 203 - 205
 
 # variables that are adjustable by user
 #region
-heartname, filename = "heart.png", "puzzleanddragonboard.png"
+heartname, filename = "heart.png", "TestFile/puzzleanddragonboard.png"
 sleepTime = 0.001
 maxMoveStep = 140
 puzzleMoveTime = 8.5 #seconds
@@ -56,7 +56,7 @@ def movemouse(letter):
 
 def locate_on_screen(name_of_template, prov_ratio1 = None, prov_ratio2 = None, icon = None):
     #print("looking for ", name_of_template, " given the ratio", prov_ratio1, prov_ratio2)
-    foldername = "icon\\" if icon == "Orb" else ""
+    foldername = "ImageFile\\" if icon == "Orb" else ""
     if icon == "Orb": max_factor = [5,6]
     elif icon == "screen_elements": max_factor = [7, 10]
     else: max_factor = [4,4]
@@ -231,6 +231,7 @@ def draw_vector(color, starting_coor, end_coor):
     elif vect_y != 0:
         pygame.draw.rect(boardscreen, pygame.Color(color), [(start_x+0.4)*orb_dis_size, (start_y+0.4)*orb_dis_size, vect_thick, (vect_y)*orb_dis_size])
 def draw_boundary(color, top_left, bottom_right):
+    pass
 
 def create_vector(orb_color, final_pos):
     sources, destinations = find_aggregate_shortest_path(orb_color, final_pos)

@@ -39,7 +39,18 @@ This project was started because I play the JP version of PAD and I wanted to pl
 ---
 <a id = "how-does-it-work"></a> 
 ## How Does PAD_AlgorithmicSolver Work?
- - 1.) 
+ - 1.) Take screenshot, checks if a board exist
+    - Visualizing it is optional
+ - 2.) Make and store an array of the board
+ - 3.) Create partitions and find a "good" permutaion
+ - 4.) retrieve Info from GUI
+ - 5.) Filter for partitions that meet user's requiement
+ - 6.) Create/start simulation
+ - 7.) Find shortest path for each orbs, end position pairs
+ - 8.) Move and update board state
+ - 9.) See if some of the moves can be shorted
+ - 10.) Move the mouse based on the outcome of the simulation
+ - 11.) Repeat
 
 
 ---
