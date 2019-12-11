@@ -16,17 +16,9 @@ PAD-AS
      - [Options in the GUI](#option-gui)
      - [Limitation](#limitation)
 
-$$
-f(x) = \int_{-\infty}^{\infty}
-    \hat f(\xi)\,e^{2 \pi i \xi x}
-    \,d\xi
-$$
 
 
-
-
-<a id = "getting-started"></a> 
----
+--- <a id = "getting-started"></a> 
 ## General and Getting Started
 
 
