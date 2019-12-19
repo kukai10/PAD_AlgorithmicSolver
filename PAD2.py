@@ -349,8 +349,7 @@ print("orb dictionary: ", orb_count_dic, "\n potential movers: ", potential_move
 switch_orb((0,0),(0,1))
 orb_dis_size = 100
 visualize = True
-print(board)
-print(norm_orb_position)
+
 if visualize:
         pygame.init()
         board_dimension = [width*orb_dis_size, height*orb_dis_size]
