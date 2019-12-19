@@ -5,12 +5,12 @@ PAD-AS
 
  Languages: [English](README.md), [日本語/Japanese](README.jp.md)
  - [General and Getting Started](#getting-started)
-     - [Introduction](#intro)
+     - [Motivation for the Project](#intro)
      - [Dependencies](#dependencies)
      - [Installation](#instalation)
  - [How Does PAD_AlgorithmicSolver Work?](#how-does-it-work)
      - [General overview of the Algorithm](#general-overview)
-     - [Techiques](#techniques)
+     - [Techniques](#techniques)
      - [Performance](#performance)
  - [Explanatory Notes](#explanation)
      - [Options in the GUI](#option-gui)
@@ -21,11 +21,35 @@ PAD-AS
 --- 
 <a id = "getting-started"></a> 
 ## General and Getting Started
+This program is an automated puzzle solver that works on any computer.  The solver will take screenshots and search for a PAD screen and it will play the game using the 
+
+
+this program will take into account the following when it is solving the board:
+ - leader skills(any # of color connected, erase # of color orbs, combo skills, 5+ connected, 7x6, no drop)
+ - awoken skills(7c, 10c, 2way, heart piercier, void damage piercer, type killers, 80% < HP buff, 50% > HP buff)
+ - player buffs(atk up, def up, status buff from leader skill)
+ - enemy buffs(def up, combo absorbtion, element absorption, damage absorbtion, void damage, guts)
+ - board gimics(poison, jammer, darkness, tapes, cloud)
+ 
+The feature that I am fond of:
+ - human like movements(hesitation, small bits of randomness)
+ - If the option is turned on, it will make descisions like doing 1 combo to gain skill turn
+ - solver that takes into account most gimics
+ - adaptability of the solver
+instructions from the user-interface.
+
+pic of gui 
+
+gif of solver
+
 
 ---
 <a id = "intro"></a> 
-### Introduction
-This project was started because I play the JP version of PAD and I wanted to play using 2 player mode.  I got an emulator (NOX) on my pc but playing PAD on my PC was hard, so I thought "hey, I should make a solver that plays the game for me, then I can play multiplayer with my pc and smartphone"
+### Motivation for the Project
+This project was started because many people, myself included, are not able to utilize 2-player mode; reasons for this is because they don't have a second phone, or no friends who plays the JP version, or because its late at night and everyone is asleep, etc.
+I knew that there are emulators on that can run PAD, I use [NOX](), however unless your computer is touchscreen, there's no easy way of manipulating the board.  After learning some python, I made this my first personal project and I believe there are many people who are in the same shoes as me, so I made this public.
+I don't care if I get cited when this project is used online, please give credit to [guy who made the cv2 lib](#) because although my modified version is powerful that his, the base of that part of the code is from him.
+
 
 ---
 <a id = "dependencies"></a> 
