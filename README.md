@@ -82,6 +82,14 @@ I don't care if I get cited when this project is used online, please give credit
 ### General overview of the Algorithm
 
 
+
+
+
+
+For a given board, we find few candidates that could be the final state of the board.  Then for each potential final state we add weights, the weights are going to be the distance from the initial to the final position, if the orb is in the right position, we assign -5 as it's weight.  If the algorithm finishes a task (i.e. connect some # of orbs) it gets rewarded by -10.
+The reason I have weights is do somesthing similar to a greedy-algorithm, at each point the algorithm will decide which vertical or horizontal move will minimize the total weights.
+
+
 ---
 <a id = "techniques"></a> 
 ### Techniques
