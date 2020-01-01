@@ -18,10 +18,9 @@ def virtual_game_loop():
     FPS = 10/10    
     board_dimension = [width*orb_dis_size, height*orb_dis_size]
     create_board(board_dimension)
-    #create_vector("red", [])           #####################################################
+    draw_vector("red", [2,1], [0,0])           #####################################################
     pygame.display.update()
     #cv2.waitKey(8000)
-    #"""
     dt = 0
     clock = pygame.time.Clock()
     while not quit_game:
@@ -35,7 +34,6 @@ def virtual_game_loop():
         clock.tick(FPS)
         dt+=1/FPS
         if dt>3: break
-    #"""
     pygame.quit()
     quit()
 
@@ -57,7 +55,9 @@ def draw_vector(color, starting_coor, end_coor):
     end_x, end_y = end_coor[0], end_coor[1]
     vect_x, vect_y = start_x-end_x , start_y - end_y
     if vect_x != 0 and vect_y != 0:
+        print("pass here")
         pygame.draw.rect(boardscreen, pygame.Color(color), [(start_x+0.4)*orb_dis_size, (start_y+0.4)*orb_dis_size, -vect_x*orb_dis_size, vect_thick])
+        pygame.draw.rect(boardscreen, pygame.Color(color), [(start_x+0.4-vect_x)*orb_dis_size,(start_y+0.4)*orb_dis_size+vect_thick-1, vect_thick, -vect_y*orb_dis_size])
     elif vect_x != 0:
         pygame.draw.rect(boardscreen, pygame.Color(color), [(start_x+0.4)*orb_dis_size, (start_y+0.4)*orb_dis_size, -vect_x*orb_dis_size, vect_thick])
     elif vect_y != 0:
@@ -70,22 +70,22 @@ def create_board(board_size):
     #springgreen, darkgreen, forestgreen
     #darkviolet, darkgray
     #lightsalmon, hotpink, pink, lightpink
-    for i in range(5):
-        for j in range(6):
-            color_for_vis = color_dict[board[i][j][0]]
-            pygame.draw.rect(boardscreen, pygame.Color(color_for_vis), (j*100 + 2, i*100 + 2,  96, 96))
+    for i in range(height):
+        for j in range(width):
+            color_for_vis = color_dict[board[i][j]] #[0]**************************************************
+            pygame.draw.rect(boardscreen, pygame.Color("gray"), (j*100 + 2, i*100+2, 96, 96))
+            pygame.draw.rect(boardscreen, pygame.Color(color_for_vis), (j*100 + 12, i*100 + 12,  76, 76))
     pygame.display.flip()
-
 width, height = 6, 5
 orb_dis_height = 100
 orb_dis_size = 100
 visualize = True
 
-board = [[ "green", "dark", li, "dark", li, "dark"],
-[ li, he, re, gr, gr, li],
-[ li, he, li, he, gr, he],
-[ "dark", li, re, he, li, re],
-[ re, "dark", li, re, "dark", bl]]
+board = [[ "green", "dark",  "light", "dark",  "light", "dark"],
+         [ "light", "heart", "red",   "green", "green", "light"],
+         [ "light", "heart", "light", "heart", "green", "heart"],
+         [ "dark",  "light", "red",   "heart", "light", "red"],
+         [ "red",   "dark",  "light", "red",   "dark",  "blue"]]
 
 
 
