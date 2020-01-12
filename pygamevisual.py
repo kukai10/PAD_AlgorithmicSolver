@@ -4,8 +4,6 @@ import time
 import pygame
 
 
-
-
 scriptpath, filepath = os.path.realpath(__file__), "" # Get the file path to the screenshot image to analize 
 for i in range(1,len(scriptpath)+1):
     if scriptpath[-i] == "\\":

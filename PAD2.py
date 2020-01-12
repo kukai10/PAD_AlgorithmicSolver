@@ -31,10 +31,9 @@ def clock(func): # version 2, page 203 - 205
 
 
 # variables that are adjustable by user
-#region
 heartname, filename = "heart.png", "TestFile/puzzleanddragonboard.png"
-sleepTime = 0.001
-maxMoveStep = 140
+sleepTime = 0.001 # pause time
+maxMoveStep = 140 #max number of moves teh algorithm will take
 puzzleMoveTime = 8.5 #seconds
 movePixel, moveTime= None, puzzleMoveTime/maxMoveStep
 visualize = True
