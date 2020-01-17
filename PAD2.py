@@ -188,6 +188,7 @@ def search_by_distance(x,y, steps):
         if -1 < y-i:
             temp_arr.append([board[y-i][x+(steps-i)]])
             temp_arr.append([board[y-i][x-(steps-i)]])
+    return temp_arr
 
 def find_potential_mover(orb_position):
     orb_count, potential_mover = {}, [[], [], []]
