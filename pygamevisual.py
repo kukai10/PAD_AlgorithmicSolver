@@ -2,6 +2,7 @@ import sys
 import os
 import time
 import pygame
+import math
 import pyautogui as auto
 
 scriptpath, filepath = os.path.realpath(__file__), "" # Get the file path to the screenshot image to analize 
@@ -64,14 +65,15 @@ def create_board(board_size):
 
 #### main function   #########
 screen_x, screen_y = auto.size()
-print(screen_x, screen_y)
+unit_length = math.gcd(screen_x, screen_y)
+screen_ratio_x, screen_ratio_y =  screen_x/unit_length, screen_y/unit_length
+max_size_of_pad = max([int((screen_ratio_y/pd[1])*pd[0]) for pd in [[1,2], [1, 3], [9, 16], [3,4]]])
+biggest_board = min(600, screen_x - max_size_of_pad*unit_length - 50)
 width, height = 6, 5
 #### visualize with pygame #####
 visualize = True
-vis_orbsize, vis_padding = 100, 2
-vis_center = int(vis_orbsize/2)
-vis_radius = int(vis_center*0.8)
-print(vis_center, vis_radius)
+
+
 board = [[ "green", "dark",  "light", "dark",  "light", "dark" ],
          [ "light", "heart", "red",   "green", "green", "light"],
          [ "light", "heart", "light", "heart", "green", "heart"],
@@ -86,7 +88,11 @@ board1 = [["green", "dark",  "light", "dark",  "light", "dark",  "red"  ],
 if True:
     board = board1
     width, height = 7, 6
-visualize=False
+visualize=True
+vis_orbsize, vis_padding = int(biggest_board/width), 2
+vis_center = int(vis_orbsize/2)
+vis_radius = int(vis_center*0.8)
+print(vis_center, vis_radius)
 if visualize:
         pygame.init()
         board_dimension = [width*vis_orbsize, height*vis_orbsize]
