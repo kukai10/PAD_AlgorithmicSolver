@@ -2,6 +2,7 @@ import sys
 import os
 import time
 import pygame
+import pyautogui as auto
 
 scriptpath, filepath = os.path.realpath(__file__), "" # Get the file path to the screenshot image to analize 
 for i in range(1,len(scriptpath)+1):
@@ -62,6 +63,8 @@ def create_board(board_size):
 
 
 #### main function   #########
+screen_x, screen_y = auto.size()
+print(screen_x, screen_y)
 width, height = 6, 5
 #### visualize with pygame #####
 visualize = True
@@ -69,11 +72,21 @@ vis_orbsize, vis_padding = 100, 2
 vis_center = int(vis_orbsize/2)
 vis_radius = int(vis_center*0.8)
 print(vis_center, vis_radius)
-board = [[ "green", "dark",  "light", "dark",  "light", "dark"],
+board = [[ "green", "dark",  "light", "dark",  "light", "dark" ],
          [ "light", "heart", "red",   "green", "green", "light"],
          [ "light", "heart", "light", "heart", "green", "heart"],
-         [ "dark",  "light", "red",   "heart", "light", "red"],
-         [ "red",   "dark",  "light", "red",   "dark",  "blue"]]
+         [ "dark",  "light", "red",   "heart", "light", "red"  ],
+         [ "red",   "dark",  "light", "red",   "dark",  "blue" ]]
+board1 = [["green", "dark",  "light", "dark",  "light", "dark",  "red"  ],
+         [ "light", "heart", "red",   "green", "green", "light", "blue" ],
+         [ "light", "heart", "light", "heart", "green", "heart", "green"],
+         [ "dark",  "light", "red",   "heart", "light", "red",   "dark" ],
+         [ "red",   "dark",  "light", "red",   "dark",  "blue",  "light"],
+         [ "red",   "dark",  "light", "red",   "blue",  "red",   "light"]]
+if True:
+    board = board1
+    width, height = 7, 6
+visualize=False
 if visualize:
         pygame.init()
         board_dimension = [width*vis_orbsize, height*vis_orbsize]
