@@ -1,0 +1,2746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>953</width>
+    <height>823</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Player 1</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Pause</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>Leader Skill 1</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_8">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>873</width>
+                 <height>611</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_15">
+                <item row="4" column="0">
+                 <widget class="QGroupBox" name="groupBox_4">
+                  <property name="title">
+                   <string>Others</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_16">
+                   <item row="0" column="0">
+                    <widget class="QScrollArea" name="scrollArea_8">
+                     <property name="widgetResizable">
+                      <bool>true</bool>
+                     </property>
+                     <widget class="QWidget" name="scrollAreaWidgetContents_8">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>804</width>
+                        <height>197</height>
+                       </rect>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_21">
+                       <item row="0" column="1">
+                        <widget class="QFrame" name="frame_2">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_28">
+                          <item row="0" column="0">
+                           <widget class="QLabel" name="label_6">
+                            <property name="text">
+                             <string>Drop Boost</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QComboBox" name="comboBox_26"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="0" column="2">
+                        <widget class="QFrame" name="frame_4">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_29">
+                          <item row="0" column="0">
+                           <widget class="QLabel" name="label_23">
+                            <property name="text">
+                             <string>Coin Boost</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QComboBox" name="comboBox_51"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QFrame" name="frame">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_27">
+                          <item row="0" column="0">
+                           <widget class="QLabel" name="label_2">
+                            <property name="text">
+                             <string>EXP boost</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QComboBox" name="comboBox_25"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QWidget" name="widget" native="true">
+                         <layout class="QGridLayout" name="gridLayout_26">
+                          <item row="0" column="0">
+                           <widget class="QLabel" name="label_31">
+                            <property name="text">
+                             <string>Extend Time</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QComboBox" name="comboBox_58"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QFrame" name="frame_5">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_23">
+                          <item row="0" column="0">
+                           <widget class="QRadioButton" name="radioButton_2">
+                            <property name="text">
+                             <string>No OrbDrop</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QFrame" name="frame_6">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_24">
+                          <item row="0" column="0">
+                           <widget class="QLabel" name="label_32">
+                            <property name="text">
+                             <string>Unconditional Extra combo</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QComboBox" name="comboBox_59"/>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QFrame" name="frame_7">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_25">
+                          <item row="0" column="0">
+                           <widget class="QRadioButton" name="radioButton_3">
+                            <property name="text">
+                             <string>No Poison Damage</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item row="1" column="0" colspan="2">
+                        <widget class="QFrame" name="frame_3">
+                         <property name="frameShape">
+                          <enum>QFrame::StyledPanel</enum>
+                         </property>
+                         <property name="frameShadow">
+                          <enum>QFrame::Raised</enum>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_22">
+                          <item row="0" column="2">
+                           <widget class="QLabel" name="label_25">
+                            <property name="text">
+                             <string>DEF</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLabel" name="label_18">
+                            <property name="text">
+                             <string>When Skill Used</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="QComboBox" name="comboBox_9"/>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QLabel" name="label_24">
+                            <property name="text">
+                             <string>ATK</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <widget class="QComboBox" name="comboBox_52"/>
+                          </item>
+                          <item row="1" column="3">
+                           <widget class="QComboBox" name="comboBox_53"/>
+                          </item>
+                          <item row="0" column="3">
+                           <widget class="QLabel" name="label_26">
+                            <property name="text">
+                             <string>Heal</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QGroupBox" name="groupBox_6">
+                  <property name="title">
+                   <string>Shape</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_19">
+                   <item row="0" column="0">
+                    <widget class="QScrollArea" name="scrollArea_10">
+                     <property name="widgetResizable">
+                      <bool>true</bool>
+                     </property>
+                     <widget class="QWidget" name="scrollAreaWidgetContents_10">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>804</width>
+                        <height>125</height>
+                       </rect>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_62">
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_7">
+                         <property name="text">
+                          <string>Color</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLabel" name="label_8">
+                         <property name="text">
+                          <string>Shape</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QComboBox" name="comboBox_27"/>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QComboBox" name="comboBox_28"/>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QComboBox" name="comboBox_29"/>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QComboBox" name="comboBox_30"/>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QComboBox" name="comboBox_31"/>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QComboBox" name="comboBox_32"/>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox_3">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>159</height>
+                   </size>
+                  </property>
+                  <property name="title">
+                   <string>Erase n number of color:</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_14">
+                   <item row="0" column="0">
+                    <widget class="QScrollArea" name="scrollArea_7">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>137</height>
+                      </size>
+                     </property>
+                     <property name="widgetResizable">
+                      <bool>true</bool>
+                     </property>
+                     <widget class="QWidget" name="scrollAreaWidgetContents_7">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>804</width>
+                        <height>270</height>
+                       </rect>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_18">
+                       <item row="10" column="0">
+                        <widget class="QComboBox" name="comboBox_8"/>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QComboBox" name="comboBox_18"/>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QComboBox" name="comboBox_4"/>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QComboBox" name="comboBox_10">
+                         <item>
+                          <property name="text">
+                           <string>3</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>4</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>5</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>6</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>7</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>8</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>9</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>10</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>11</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QComboBox" name="comboBox_20"/>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QComboBox" name="comboBox_5"/>
+                       </item>
+                       <item row="11" column="0">
+                        <widget class="QComboBox" name="comboBox_2"/>
+                       </item>
+                       <item row="6" column="0">
+                        <widget class="QComboBox" name="comboBox_6"/>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QComboBox" name="comboBox"/>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QComboBox" name="comboBox_19"/>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_3">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>16</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>Color</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLabel" name="label_5">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>16</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>LowerBound</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="6" column="3">
+                        <widget class="QComboBox" name="comboBox_45"/>
+                       </item>
+                       <item row="0" column="4">
+                        <widget class="QLabel" name="label_9">
+                         <property name="text">
+                          <string>Additional necessity</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="11" column="3">
+                        <widget class="QComboBox" name="comboBox_48"/>
+                       </item>
+                       <item row="2" column="3">
+                        <widget class="QComboBox" name="comboBox_42"/>
+                       </item>
+                       <item row="1" column="4">
+                        <widget class="QComboBox" name="comboBox_33">
+                         <item>
+                          <property name="text">
+                           <string>N/A</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>+Drop</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>New Item</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                       <item row="3" column="4">
+                        <widget class="QComboBox" name="comboBox_35"/>
+                       </item>
+                       <item row="2" column="4">
+                        <widget class="QComboBox" name="comboBox_34"/>
+                       </item>
+                       <item row="6" column="4">
+                        <widget class="QComboBox" name="comboBox_37"/>
+                       </item>
+                       <item row="8" column="4">
+                        <widget class="QComboBox" name="comboBox_38"/>
+                       </item>
+                       <item row="3" column="3">
+                        <widget class="QComboBox" name="comboBox_43"/>
+                       </item>
+                       <item row="4" column="4">
+                        <widget class="QComboBox" name="comboBox_36"/>
+                       </item>
+                       <item row="10" column="4">
+                        <widget class="QComboBox" name="comboBox_39"/>
+                       </item>
+                       <item row="11" column="4">
+                        <widget class="QComboBox" name="comboBox_40"/>
+                       </item>
+                       <item row="8" column="3">
+                        <widget class="QComboBox" name="comboBox_46"/>
+                       </item>
+                       <item row="1" column="3">
+                        <widget class="QComboBox" name="comboBox_41"/>
+                       </item>
+                       <item row="0" column="3">
+                        <widget class="QLabel" name="label_10">
+                         <property name="text">
+                          <string>UpperBound</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QComboBox" name="comboBox_3"/>
+                       </item>
+                       <item row="4" column="3">
+                        <widget class="QComboBox" name="comboBox_44"/>
+                       </item>
+                       <item row="11" column="1">
+                        <widget class="QComboBox" name="comboBox_24"/>
+                       </item>
+                       <item row="6" column="1">
+                        <widget class="QComboBox" name="comboBox_21"/>
+                       </item>
+                       <item row="8" column="1">
+                        <widget class="QComboBox" name="comboBox_22"/>
+                       </item>
+                       <item row="10" column="1">
+                        <widget class="QComboBox" name="comboBox_23"/>
+                       </item>
+                       <item row="8" column="0">
+                        <widget class="QComboBox" name="comboBox_7"/>
+                       </item>
+                       <item row="10" column="3">
+                        <widget class="QComboBox" name="comboBox_47"/>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLabel" name="label_4">
+                         <property name="text">
+                          <string>&lt;= n &lt;=</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QLabel" name="label_12">
+                         <property name="text">
+                          <string>&lt;= n &lt;=</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="2">
+                        <widget class="QLabel" name="label_13">
+                         <property name="text">
+                          <string>&lt;= n &lt;=</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="6" column="2">
+                        <widget class="QLabel" name="label_14">
+                         <property name="text">
+                          <string>&lt;= n &lt;=</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="8" column="2">
+                        <widget class="QLabel" name="label_15">
+                         <property name="text">
+                          <string>&lt;= n &lt;=</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="10" column="2">
+                        <widget class="QLabel" name="label_16">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="11" column="2">
+                        <widget class="QLabel" name="label_17">
+                         <property name="text">
+                          <string>TextLabel</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QLabel" name="label_11">
+                         <property name="text">
+                          <string>&lt;= n &lt;=</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QGroupBox" name="groupBox_5">
+                  <property name="title">
+                   <string>HP related Skill</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_17">
+                   <item row="0" column="0">
+                    <widget class="QScrollArea" name="scrollArea_9">
+                     <property name="widgetResizable">
+                      <bool>true</bool>
+                     </property>
+                     <widget class="QWidget" name="scrollAreaWidgetContents_9">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>804</width>
+                        <height>125</height>
+                       </rect>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_20">
+                       <item row="8" column="0">
+                        <widget class="QComboBox" name="comboBox_15"/>
+                       </item>
+                       <item row="8" column="3" rowspan="2">
+                        <widget class="QComboBox" name="comboBox_16"/>
+                       </item>
+                       <item row="8" column="4" rowspan="2">
+                        <widget class="QComboBox" name="comboBox_50"/>
+                       </item>
+                       <item row="8" column="2">
+                        <widget class="QLabel" name="label_22">
+                         <property name="text">
+                          <string>If HP is</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_19">
+                         <property name="text">
+                          <string>Atk Multiplier</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="3">
+                        <widget class="QComboBox" name="comboBox_14"/>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QComboBox" name="comboBox_11"/>
+                       </item>
+                       <item row="2" column="4">
+                        <widget class="QComboBox" name="comboBox_49"/>
+                       </item>
+                       <item row="1" column="4">
+                        <widget class="QComboBox" name="comboBox_17"/>
+                       </item>
+                       <item row="1" column="3">
+                        <widget class="QComboBox" name="comboBox_12"/>
+                       </item>
+                       <item row="2" column="2">
+                        <widget class="QLabel" name="label_21">
+                         <property name="text">
+                          <string>If HP is</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QComboBox" name="comboBox_13"/>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLabel" name="label_20">
+                         <property name="text">
+                          <string>If HP is</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QComboBox" name="comboBox_55"/>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QComboBox" name="comboBox_56"/>
+                       </item>
+                       <item row="8" column="1">
+                        <widget class="QComboBox" name="comboBox_57"/>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLabel" name="label_30">
+                         <property name="text">
+                          <string>DEF</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>Leader Skill 2</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea_2">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>873</width>
+                 <height>611</height>
+                </rect>
+               </property>
+               <widget class="QRadioButton" name="radioButton">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>20</y>
+                  <width>221</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Same Leader Skill as #1</string>
+                </property>
+               </widget>
+               <widget class="QGroupBox" name="groupBox_2">
+                <property name="geometry">
+                 <rect>
+                  <x>180</x>
+                  <y>70</y>
+                  <width>120</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="title">
+                 <string>GroupBox</string>
+                </property>
+               </widget>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>Status</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea_3">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>873</width>
+                 <height>611</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_30">
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox_8">
+                  <property name="title">
+                   <string>Awoken Skills</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_31">
+                   <item row="1" column="0">
+                    <widget class="QScrollArea" name="scrollArea_13">
+                     <property name="widgetResizable">
+                      <bool>true</bool>
+                     </property>
+                     <widget class="QWidget" name="scrollAreaWidgetContents_13">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>855</width>
+                        <height>283</height>
+                       </rect>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_46">
+                       <item row="0" column="0">
+                        <widget class="QGroupBox" name="groupBox_11">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>261</height>
+                          </size>
+                         </property>
+                         <property name="title">
+                          <string>Support</string>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_44">
+                          <item row="0" column="2">
+                           <widget class="QGroupBox" name="groupBox_20">
+                            <property name="maximumSize">
+                             <size>
+                              <width>211</width>
+                              <height>16777215</height>
+                             </size>
+                            </property>
+                            <property name="title">
+                             <string>GroupBox</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_42">
+                             <item row="4" column="0">
+                              <widget class="QLabel" name="label_69">
+                               <property name="text">
+                                <string>Heart 3x3</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0">
+                              <widget class="QRadioButton" name="radioButton_4">
+                               <property name="text">
+                                <string>Guard Break</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="3" column="0">
+                              <widget class="QLabel" name="label_68">
+                               <property name="text">
+                                <string>Heart column</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="3" column="1">
+                              <widget class="QComboBox" name="comboBox_132"/>
+                             </item>
+                             <item row="6" column="1">
+                              <widget class="QComboBox" name="comboBox_134"/>
+                             </item>
+                             <item row="5" column="0">
+                              <widget class="QLabel" name="label_70">
+                               <property name="text">
+                                <string>ComboDrop</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="5" column="1">
+                              <widget class="QComboBox" name="comboBox_131"/>
+                             </item>
+                             <item row="4" column="1">
+                              <widget class="QComboBox" name="comboBox_133"/>
+                             </item>
+                             <item row="6" column="0">
+                              <widget class="QLabel" name="label_71">
+                               <property name="text">
+                                <string>Dungeon Bonus</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QRadioButton" name="radioButton_7">
+                               <property name="text">
+                                <string>Bind Recovery</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_77">
+                               <property name="text">
+                                <string>HP recovery</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QComboBox" name="comboBox_138"/>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QGroupBox" name="groupBox_19">
+                            <property name="maximumSize">
+                             <size>
+                              <width>167</width>
+                              <height>16777215</height>
+                             </size>
+                            </property>
+                            <property name="title">
+                             <string>GroupBox</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_41">
+                             <item row="0" column="1">
+                              <widget class="QComboBox" name="comboBox_126"/>
+                             </item>
+                             <item row="5" column="0">
+                              <widget class="QLabel" name="label_66">
+                               <property name="text">
+                                <string>Light Row</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="5" column="1">
+                              <widget class="QComboBox" name="comboBox_129"/>
+                             </item>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_63">
+                               <property name="text">
+                                <string>Red Row</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="6" column="0">
+                              <widget class="QLabel" name="label_67">
+                               <property name="text">
+                                <string>Dark Row</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="6" column="1">
+                              <widget class="QComboBox" name="comboBox_130"/>
+                             </item>
+                             <item row="1" column="1">
+                              <widget class="QComboBox" name="comboBox_127"/>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QLabel" name="label_64">
+                               <property name="text">
+                                <string>Blue Row</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_65">
+                               <property name="text">
+                                <string>Green Row</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QComboBox" name="comboBox_128"/>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item row="0" column="0">
+                           <widget class="QGroupBox" name="groupBox_18">
+                            <property name="maximumSize">
+                             <size>
+                              <width>146</width>
+                              <height>16777215</height>
+                             </size>
+                            </property>
+                            <property name="title">
+                             <string>GroupBox</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_40">
+                             <item row="7" column="1">
+                              <widget class="QComboBox" name="comboBox_113"/>
+                             </item>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_45">
+                               <property name="text">
+                                <string>Heal+</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QComboBox" name="comboBox_109"/>
+                             </item>
+                             <item row="8" column="1">
+                              <widget class="QComboBox" name="comboBox_108"/>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QLabel" name="label_46">
+                               <property name="text">
+                                <string>Red+</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="1">
+                              <widget class="QComboBox" name="comboBox_110"/>
+                             </item>
+                             <item row="7" column="0">
+                              <widget class="QLabel" name="label_49">
+                               <property name="text">
+                                <string>Light+</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="8" column="0">
+                              <widget class="QLabel" name="label_50">
+                               <property name="text">
+                                <string>Dark+</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="4" column="1">
+                              <widget class="QComboBox" name="comboBox_112"/>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_47">
+                               <property name="text">
+                                <string>Blue+</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QComboBox" name="comboBox_111"/>
+                             </item>
+                             <item row="4" column="0">
+                              <widget class="QLabel" name="label_48">
+                               <property name="text">
+                                <string>Green+</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item row="0" column="3">
+                           <widget class="QGroupBox" name="groupBox_21">
+                            <property name="title">
+                             <string>GroupBox</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_43">
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_72">
+                               <property name="text">
+                                <string>Poison</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QComboBox" name="comboBox_135"/>
+                             </item>
+                             <item row="0" column="2">
+                              <widget class="QRadioButton" name="radioButton_5">
+                               <property name="text">
+                                <string>Naturally Fall</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QLabel" name="label_73">
+                               <property name="text">
+                                <string>Jammer</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="1">
+                              <widget class="QComboBox" name="comboBox_136"/>
+                             </item>
+                             <item row="1" column="2">
+                              <widget class="QRadioButton" name="radioButton_6">
+                               <property name="text">
+                                <string>Naturally Fall</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_74">
+                               <property name="text">
+                                <string>Darkness</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QComboBox" name="comboBox_137"/>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QScrollArea" name="scrollArea_11">
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>232</height>
+                      </size>
+                     </property>
+                     <property name="widgetResizable">
+                      <bool>true</bool>
+                     </property>
+                     <widget class="QWidget" name="scrollAreaWidgetContents_11">
+                      <property name="geometry">
+                       <rect>
+                        <x>-192</x>
+                        <y>0</y>
+                        <width>1143</width>
+                        <height>252</height>
+                       </rect>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_34">
+                       <item row="0" column="0">
+                        <widget class="QGroupBox" name="groupBox_10">
+                         <property name="title">
+                          <string>ATK</string>
+                         </property>
+                         <layout class="QGridLayout" name="gridLayout_32">
+                          <item row="0" column="2">
+                           <widget class="QGroupBox" name="groupBox_14">
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>190</height>
+                             </size>
+                            </property>
+                            <property name="title">
+                             <string>Monster 3</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_36">
+                             <item row="1" column="1">
+                              <widget class="QComboBox" name="comboBox_119"/>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QComboBox" name="comboBox_118"/>
+                             </item>
+                             <item row="4" column="1">
+                              <widget class="QComboBox" name="comboBox_79"/>
+                             </item>
+                             <item row="3" column="0">
+                              <widget class="QComboBox" name="comboBox_76"/>
+                             </item>
+                             <item row="5" column="0">
+                              <widget class="QComboBox" name="comboBox_80"/>
+                             </item>
+                             <item row="6" column="1">
+                              <widget class="QComboBox" name="comboBox_83"/>
+                             </item>
+                             <item row="4" column="0">
+                              <widget class="QComboBox" name="comboBox_78"/>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_37">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="3" column="1">
+                              <widget class="QComboBox" name="comboBox_77"/>
+                             </item>
+                             <item row="5" column="1">
+                              <widget class="QComboBox" name="comboBox_81"/>
+                             </item>
+                             <item row="6" column="0">
+                              <widget class="QComboBox" name="comboBox_82"/>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QLabel" name="label_38">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_55">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QLabel" name="label_56">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QGroupBox" name="groupBox_13">
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>190</height>
+                             </size>
+                            </property>
+                            <property name="title">
+                             <string>Monster 2</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_35">
+                             <item row="1" column="1">
+                              <widget class="QComboBox" name="comboBox_117"/>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QLabel" name="label_54">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QComboBox" name="comboBox_116"/>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QLabel" name="label_36">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="4" column="1">
+                              <widget class="QComboBox" name="comboBox_71"/>
+                             </item>
+                             <item row="3" column="0">
+                              <widget class="QComboBox" name="comboBox_68"/>
+                             </item>
+                             <item row="6" column="0">
+                              <widget class="QComboBox" name="comboBox_74"/>
+                             </item>
+                             <item row="4" column="0">
+                              <widget class="QComboBox" name="comboBox_70"/>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_35">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="6" column="1">
+                              <widget class="QComboBox" name="comboBox_75"/>
+                             </item>
+                             <item row="3" column="1">
+                              <widget class="QComboBox" name="comboBox_69"/>
+                             </item>
+                             <item row="5" column="0">
+                              <widget class="QComboBox" name="comboBox_72"/>
+                             </item>
+                             <item row="5" column="1">
+                              <widget class="QComboBox" name="comboBox_73"/>
+                             </item>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_53">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item row="0" column="5">
+                           <widget class="QGroupBox" name="groupBox_17">
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>190</height>
+                             </size>
+                            </property>
+                            <property name="title">
+                             <string>Monster 6</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_39">
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_61">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QLabel" name="label_62">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QLabel" name="label_44">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="4" column="1">
+                              <widget class="QComboBox" name="comboBox_103"/>
+                             </item>
+                             <item row="3" column="0">
+                              <widget class="QComboBox" name="comboBox_100"/>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_43">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="4" column="0">
+                              <widget class="QComboBox" name="comboBox_102"/>
+                             </item>
+                             <item row="6" column="1">
+                              <widget class="QComboBox" name="comboBox_107"/>
+                             </item>
+                             <item row="5" column="0">
+                              <widget class="QComboBox" name="comboBox_104"/>
+                             </item>
+                             <item row="5" column="1">
+                              <widget class="QComboBox" name="comboBox_105"/>
+                             </item>
+                             <item row="3" column="1">
+                              <widget class="QComboBox" name="comboBox_101"/>
+                             </item>
+                             <item row="6" column="0">
+                              <widget class="QComboBox" name="comboBox_106"/>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QComboBox" name="comboBox_124"/>
+                             </item>
+                             <item row="1" column="1">
+                              <widget class="QComboBox" name="comboBox_125"/>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item row="0" column="4">
+                           <widget class="QGroupBox" name="groupBox_16">
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>190</height>
+                             </size>
+                            </property>
+                            <property name="title">
+                             <string>Monster 5</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_38">
+                             <item row="1" column="1">
+                              <widget class="QComboBox" name="comboBox_123"/>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QComboBox" name="comboBox_122"/>
+                             </item>
+                             <item row="3" column="1">
+                              <widget class="QComboBox" name="comboBox_94"/>
+                             </item>
+                             <item row="4" column="0">
+                              <widget class="QComboBox" name="comboBox_96"/>
+                             </item>
+                             <item row="4" column="1">
+                              <widget class="QComboBox" name="comboBox_97"/>
+                             </item>
+                             <item row="3" column="0">
+                              <widget class="QComboBox" name="comboBox_95"/>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_41">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QLabel" name="label_42">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="6" column="0">
+                              <widget class="QComboBox" name="comboBox_88"/>
+                             </item>
+                             <item row="5" column="1">
+                              <widget class="QComboBox" name="comboBox_99"/>
+                             </item>
+                             <item row="5" column="0">
+                              <widget class="QComboBox" name="comboBox_98"/>
+                             </item>
+                             <item row="6" column="1">
+                              <widget class="QComboBox" name="comboBox_93"/>
+                             </item>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_59">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QLabel" name="label_60">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item row="0" column="0">
+                           <widget class="QGroupBox" name="groupBox_12">
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>190</height>
+                             </size>
+                            </property>
+                            <property name="title">
+                             <string>Monster 1</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_33">
+                             <item row="5" column="0">
+                              <widget class="QComboBox" name="comboBox_64"/>
+                             </item>
+                             <item row="4" column="0">
+                              <widget class="QComboBox" name="comboBox_66"/>
+                             </item>
+                             <item row="3" column="0">
+                              <widget class="QComboBox" name="comboBox_63"/>
+                             </item>
+                             <item row="4" column="1">
+                              <widget class="QComboBox" name="comboBox_67"/>
+                             </item>
+                             <item row="5" column="1">
+                              <widget class="QComboBox" name="comboBox_61"/>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_33">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>Name</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="7" column="0">
+                              <widget class="QComboBox" name="comboBox_65"/>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QLabel" name="label_34">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>Count</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="7" column="1">
+                              <widget class="QComboBox" name="comboBox_62"/>
+                             </item>
+                             <item row="3" column="1">
+                              <widget class="QComboBox" name="comboBox_60"/>
+                             </item>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_51">
+                               <property name="text">
+                                <string>Main Color</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QLabel" name="label_52">
+                               <property name="text">
+                                <string>Sub Color</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="1">
+                              <widget class="QComboBox" name="comboBox_114"/>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QComboBox" name="comboBox_115"/>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                          <item row="0" column="3">
+                           <widget class="QGroupBox" name="groupBox_15">
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>190</height>
+                             </size>
+                            </property>
+                            <property name="title">
+                             <string>Monster 4</string>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout_37">
+                             <item row="0" column="1">
+                              <widget class="QLabel" name="label_58">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_57">
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="2" column="1">
+                              <widget class="QLabel" name="label_40">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="3" column="1">
+                              <widget class="QComboBox" name="comboBox_89"/>
+                             </item>
+                             <item row="5" column="0">
+                              <widget class="QComboBox" name="comboBox_86"/>
+                             </item>
+                             <item row="3" column="0">
+                              <widget class="QComboBox" name="comboBox_84"/>
+                             </item>
+                             <item row="4" column="1">
+                              <widget class="QComboBox" name="comboBox_90"/>
+                             </item>
+                             <item row="4" column="0">
+                              <widget class="QComboBox" name="comboBox_85"/>
+                             </item>
+                             <item row="2" column="0">
+                              <widget class="QLabel" name="label_39">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>TextLabel</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="5" column="1">
+                              <widget class="QComboBox" name="comboBox_91"/>
+                             </item>
+                             <item row="6" column="1">
+                              <widget class="QComboBox" name="comboBox_92"/>
+                             </item>
+                             <item row="6" column="0">
+                              <widget class="QComboBox" name="comboBox_87"/>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QComboBox" name="comboBox_120"/>
+                             </item>
+                             <item row="1" column="1">
+                              <widget class="QComboBox" name="comboBox_121"/>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QScrollArea" name="scrollArea_12">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>122</height>
+                   </size>
+                  </property>
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_12">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>828</width>
+                     <height>113</height>
+                    </rect>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_47">
+                    <item row="0" column="0">
+                     <widget class="QGroupBox" name="groupBox_9">
+                      <property name="title">
+                       <string>HP/Heal</string>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_45">
+                       <item row="0" column="3">
+                        <widget class="QLabel" name="label_76">
+                         <property name="text">
+                          <string>Heal stat</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="3">
+                        <widget class="QLabel" name="label_79">
+                         <property name="text">
+                          <string>Team Heal+</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QComboBox" name="comboBox_139"/>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_75">
+                         <property name="text">
+                          <string>HP Stat</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_78">
+                         <property name="text">
+                          <string>Team HP+</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="4">
+                        <widget class="QComboBox" name="comboBox_140"/>
+                       </item>
+                       <item row="0" column="4">
+                        <widget class="QLineEdit" name="lineEdit_2">
+                         <property name="text">
+                          <string>100</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QLineEdit" name="lineEdit"/>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>Normal Protocal</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_61">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea_4">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>873</width>
+                 <height>611</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_11">
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox_22">
+                  <property name="title">
+                   <string>Waiting time for User Input</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_60">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_80">
+                     <property name="text">
+                      <string>Time:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="comboBox_141"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QScrollArea" name="scrollArea_16">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_16">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>849</width>
+                     <height>518</height>
+                    </rect>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_52">
+                    <item row="0" column="0">
+                     <widget class="QGroupBox" name="groupBox_26">
+                      <property name="title">
+                       <string>Action</string>
+                      </property>
+                      <widget class="QGroupBox" name="groupBox_31">
+                       <property name="geometry">
+                        <rect>
+                         <x>30</x>
+                         <y>40</y>
+                         <width>631</width>
+                         <height>141</height>
+                        </rect>
+                       </property>
+                       <property name="title">
+                        <string>Combo</string>
+                       </property>
+                       <widget class="QLabel" name="label_87">
+                        <property name="geometry">
+                         <rect>
+                          <x>490</x>
+                          <y>60</y>
+                          <width>131</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Max Possible Combo</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_88">
+                        <property name="geometry">
+                         <rect>
+                          <x>460</x>
+                          <y>60</y>
+                          <width>55</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>&lt;=</string>
+                        </property>
+                       </widget>
+                       <widget class="QComboBox" name="comboBox_144">
+                        <property name="geometry">
+                         <rect>
+                          <x>370</x>
+                          <y>50</y>
+                          <width>73</width>
+                          <height>22</height>
+                         </rect>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_89">
+                        <property name="geometry">
+                         <rect>
+                          <x>380</x>
+                          <y>30</y>
+                          <width>55</width>
+                          <height>16</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Combo</string>
+                        </property>
+                       </widget>
+                       <widget class="QLabel" name="label_90">
+                        <property name="geometry">
+                         <rect>
+                          <x>20</x>
+                          <y>90</y>
+                          <width>551</width>
+                          <height>20</height>
+                         </rect>
+                        </property>
+                        <property name="text">
+                         <string>Does UserDefined # of combos.  If max combo is less than the desired, the algorithm makes the best of it</string>
+                        </property>
+                       </widget>
+                      </widget>
+                      <widget class="QGroupBox" name="groupBox_32">
+                       <property name="geometry">
+                        <rect>
+                         <x>30</x>
+                         <y>190</y>
+                         <width>621</width>
+                         <height>150</height>
+                        </rect>
+                       </property>
+                       <property name="title">
+                        <string>Color</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_63">
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_91">
+                          <property name="text">
+                           <string>Color</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLabel" name="label_92">
+                          <property name="text">
+                           <string>inequality</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_93">
+                          <property name="text">
+                           <string>min_val</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="QComboBox" name="comboBox_145"/>
+                        </item>
+                        <item row="1" column="1" rowspan="2">
+                         <widget class="QComboBox" name="comboBox_146"/>
+                        </item>
+                        <item row="1" column="2" rowspan="2">
+                         <widget class="QComboBox" name="comboBox_149"/>
+                        </item>
+                        <item row="2" column="0" rowspan="2">
+                         <widget class="QComboBox" name="comboBox_147"/>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="QComboBox" name="comboBox_148"/>
+                        </item>
+                        <item row="3" column="2">
+                         <widget class="QComboBox" name="comboBox_150"/>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="QComboBox" name="comboBox_151"/>
+                        </item>
+                        <item row="4" column="1">
+                         <widget class="QComboBox" name="comboBox_152"/>
+                        </item>
+                        <item row="4" column="2">
+                         <widget class="QComboBox" name="comboBox_153"/>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="QLabel" name="label_94">
+                          <property name="text">
+                           <string>Max_val</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="3">
+                         <widget class="QComboBox" name="comboBox_154"/>
+                        </item>
+                        <item row="3" column="3">
+                         <widget class="QComboBox" name="comboBox_155"/>
+                        </item>
+                        <item row="4" column="3">
+                         <widget class="QComboBox" name="comboBox_156"/>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QGroupBox" name="groupBox_33">
+                       <property name="geometry">
+                        <rect>
+                         <x>50</x>
+                         <y>350</y>
+                         <width>521</width>
+                         <height>131</height>
+                        </rect>
+                       </property>
+                       <property name="title">
+                        <string>Shape</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_64">
+                        <item row="1" column="2">
+                         <widget class="QComboBox" name="comboBox_158"/>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="QLabel" name="label_95">
+                          <property name="text">
+                           <string>TextLabel</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="QComboBox" name="comboBox_157"/>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="QComboBox" name="comboBox_160"/>
+                        </item>
+                        <item row="2" column="2">
+                         <widget class="QComboBox" name="comboBox_159"/>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_96">
+                          <property name="text">
+                           <string>TextLabel</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>Evasive Protocal</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_12">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea_5">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_5">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>873</width>
+                 <height>611</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_50">
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox_23">
+                  <property name="title">
+                   <string>Waiting time for user Input</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_51">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_81">
+                     <property name="text">
+                      <string>Time:</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QComboBox" name="comboBox_142"/>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QScrollArea" name="scrollArea_14">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_14">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>849</width>
+                     <height>282</height>
+                    </rect>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_48">
+                    <item row="0" column="0">
+                     <widget class="QGroupBox" name="groupBox_24">
+                      <property name="title">
+                       <string>Trigger Condition</string>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_66">
+                       <item row="3" column="5">
+                        <widget class="QComboBox" name="comboBox_162"/>
+                       </item>
+                       <item row="0" column="5">
+                        <widget class="QComboBox" name="comboBox_167"/>
+                       </item>
+                       <item row="0" column="4">
+                        <widget class="QComboBox" name="comboBox_168"/>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QLabel" name="label_85">
+                         <property name="text">
+                          <string>If HP</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="4">
+                        <widget class="QComboBox" name="comboBox_161"/>
+                       </item>
+                       <item row="4" column="2">
+                        <widget class="QLabel" name="label_100">
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="2" colspan="2">
+                        <widget class="QLabel" name="label_82">
+                         <property name="text">
+                          <string>If Max Combo</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0" colspan="2">
+                        <widget class="QComboBox" name="comboBox_166"/>
+                       </item>
+                       <item row="1" column="0" rowspan="2" colspan="2">
+                        <widget class="QComboBox" name="comboBox_165"/>
+                       </item>
+                       <item row="1" column="2">
+                        <widget class="QLabel" name="label_83">
+                         <property name="text">
+                          <string>if</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QComboBox" name="comboBox_164"/>
+                       </item>
+                       <item row="4" column="0" colspan="2">
+                        <widget class="QPushButton" name="pushButton_3">
+                         <property name="text">
+                          <string>Just Cause</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="4" colspan="2">
+                        <widget class="QScrollArea" name="scrollArea_20">
+                         <property name="widgetResizable">
+                          <bool>true</bool>
+                         </property>
+                         <widget class="QWidget" name="scrollAreaWidgetContents_20">
+                          <property name="geometry">
+                           <rect>
+                            <x>0</x>
+                            <y>0</y>
+                            <width>261</width>
+                            <height>125</height>
+                           </rect>
+                          </property>
+                          <layout class="QGridLayout" name="gridLayout_65">
+                           <item row="3" column="2">
+                            <widget class="QComboBox" name="comboBox_170"/>
+                           </item>
+                           <item row="5" column="1">
+                            <widget class="QComboBox" name="comboBox_174"/>
+                           </item>
+                           <item row="2" column="1">
+                            <widget class="QComboBox" name="comboBox_169"/>
+                           </item>
+                           <item row="5" column="2">
+                            <widget class="QComboBox" name="comboBox_173"/>
+                           </item>
+                           <item row="2" column="2">
+                            <widget class="QComboBox" name="comboBox_171"/>
+                           </item>
+                           <item row="3" column="1">
+                            <widget class="QComboBox" name="comboBox_172"/>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="label_97">
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>16</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>color</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="2" column="3">
+                            <widget class="QComboBox" name="comboBox_175"/>
+                           </item>
+                           <item row="3" column="3">
+                            <widget class="QComboBox" name="comboBox_176"/>
+                           </item>
+                           <item row="5" column="3">
+                            <widget class="QComboBox" name="comboBox_177"/>
+                           </item>
+                           <item row="0" column="3">
+                            <widget class="QLabel" name="label_98">
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>16</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>Count</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="2">
+                            <widget class="QLabel" name="label_99">
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>16</height>
+                              </size>
+                             </property>
+                             <property name="text">
+                              <string>Inequality</string>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QScrollArea" name="scrollArea_15">
+                  <property name="widgetResizable">
+                   <bool>true</bool>
+                  </property>
+                  <widget class="QWidget" name="scrollAreaWidgetContents_15">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>849</width>
+                     <height>227</height>
+                    </rect>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_49">
+                    <item row="0" column="0">
+                     <widget class="QGroupBox" name="groupBox_25">
+                      <property name="title">
+                       <string>Triggered Action</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_8">
+           <attribute name="title">
+            <string>Meta Setting</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_13">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea_6">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_6">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>873</width>
+                 <height>611</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_54">
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>83</height>
+                   </size>
+                  </property>
+                  <property name="title">
+                   <string>GroupBox</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_59">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label">
+                     <property name="text">
+                      <string>7x6</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLabel" name="label_27">
+                     <property name="text">
+                      <string>5x6</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QLabel" name="label_28">
+                     <property name="text">
+                      <string>4x6</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QCheckBox" name="checkBox_10">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QCheckBox" name="checkBox_11">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QCheckBox" name="checkBox_12">
+                     <property name="text">
+                      <string>CheckBox</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QGroupBox" name="groupBox_7">
+                  <property name="title">
+                   <string>GroupBox</string>
+                  </property>
+                  <widget class="QLabel" name="label_29">
+                   <property name="geometry">
+                    <rect>
+                     <x>20</x>
+                     <y>30</y>
+                     <width>261</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Movetime(round to the closest 1/2 second)</string>
+                   </property>
+                  </widget>
+                  <widget class="QComboBox" name="comboBox_54">
+                   <property name="geometry">
+                    <rect>
+                     <x>310</x>
+                     <y>30</y>
+                     <width>73</width>
+                     <height>22</height>
+                    </rect>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QGroupBox" name="groupBox_27">
+                  <property name="title">
+                   <string>Behavior</string>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_53">
+                   <item row="0" column="0">
+                    <widget class="QRadioButton" name="radioButton_8">
+                     <property name="text">
+                      <string>Human-ike Movement</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QRadioButton" name="radioButton_9">
+                     <property name="text">
+                      <string>Machine-like Movement</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QRadioButton" name="radioButton_12">
+                     <property name="text">
+                      <string>Visualize Machine Workings</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QRadioButton" name="radioButton_10">
+                     <property name="text">
+                      <string>Fast Search</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="QRadioButton" name="radioButton_11">
+                     <property name="text">
+                      <string>Normal Search</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLabel" name="label_86">
+                     <property name="text">
+                      <string>Algorithm</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QComboBox" name="comboBox_143">
+                     <item>
+                      <property name="text">
+                       <string>Kukai's Method</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Machine Learning</string>
+                      </property>
+                     </item>
+                     <item>
+                      <property name="text">
+                       <string>Beam Search</string>
+                      </property>
+                     </item>
+                    </widget>
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QRadioButton" name="radioButton_13">
+                     <property name="text">
+                      <string>Orb Drop Analysis</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_9">
+           <attribute name="title">
+            <string>Enemy</string>
+           </attribute>
+           <layout class="QGridLayout" name="gridLayout_58">
+            <item row="0" column="0">
+             <widget class="QScrollArea" name="scrollArea_17">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_17">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>873</width>
+                 <height>198</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_55">
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox_28">
+                  <property name="title">
+                   <string>Assumption</string>
+                  </property>
+                  <widget class="QRadioButton" name="radioButton_14">
+                   <property name="geometry">
+                    <rect>
+                     <x>30</x>
+                     <y>20</y>
+                     <width>291</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>One Shot and Dead?</string>
+                   </property>
+                  </widget>
+                  <widget class="QRadioButton" name="radioButton_15">
+                   <property name="geometry">
+                    <rect>
+                     <x>30</x>
+                     <y>60</y>
+                     <width>95</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Huge Initial Damage?</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QScrollArea" name="scrollArea_18">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_18">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>873</width>
+                 <height>197</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_56">
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox_29">
+                  <property name="title">
+                   <string>Probable information</string>
+                  </property>
+                  <widget class="QCheckBox" name="checkBox_9">
+                   <property name="geometry">
+                    <rect>
+                     <x>20</x>
+                     <y>30</y>
+                     <width>81</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Check if we can stall</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QScrollArea" name="scrollArea_19">
+              <property name="widgetResizable">
+               <bool>true</bool>
+              </property>
+              <widget class="QWidget" name="scrollAreaWidgetContents_19">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>873</width>
+                 <height>198</height>
+                </rect>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_57">
+                <item row="0" column="0">
+                 <widget class="QGroupBox" name="groupBox_30">
+                  <property name="title">
+                   <string>Check for:</string>
+                  </property>
+                  <widget class="QCheckBox" name="checkBox">
+                   <property name="geometry">
+                    <rect>
+                     <x>20</x>
+                     <y>30</y>
+                     <width>191</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Void Damage</string>
+                   </property>
+                  </widget>
+                  <widget class="QCheckBox" name="checkBox_2">
+                   <property name="geometry">
+                    <rect>
+                     <x>10</x>
+                     <y>60</y>
+                     <width>201</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Combo Absorbtion</string>
+                   </property>
+                  </widget>
+                  <widget class="QCheckBox" name="checkBox_3">
+                   <property name="geometry">
+                    <rect>
+                     <x>20</x>
+                     <y>90</y>
+                     <width>81</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Element Absorbtion</string>
+                   </property>
+                  </widget>
+                  <widget class="QCheckBox" name="checkBox_4">
+                   <property name="geometry">
+                    <rect>
+                     <x>20</x>
+                     <y>120</y>
+                     <width>81</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Damage Absorbtion</string>
+                   </property>
+                  </widget>
+                  <widget class="QCheckBox" name="checkBox_5">
+                   <property name="geometry">
+                    <rect>
+                     <x>300</x>
+                     <y>30</y>
+                     <width>81</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Guts</string>
+                   </property>
+                  </widget>
+                  <widget class="QCheckBox" name="checkBox_6">
+                   <property name="geometry">
+                    <rect>
+                     <x>300</x>
+                     <y>70</y>
+                     <width>211</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Posion/Jammer/darkness/bomb</string>
+                   </property>
+                  </widget>
+                  <widget class="QCheckBox" name="checkBox_7">
+                   <property name="geometry">
+                    <rect>
+                     <x>300</x>
+                     <y>100</y>
+                     <width>81</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string> Roulette</string>
+                   </property>
+                  </widget>
+                  <widget class="QCheckBox" name="checkBox_8">
+                   <property name="geometry">
+                    <rect>
+                     <x>530</x>
+                     <y>30</y>
+                     <width>81</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>can't erase</string>
+                   </property>
+                  </widget>
+                  <widget class="QCheckBox" name="checkBox_13">
+                   <property name="geometry">
+                    <rect>
+                     <x>300</x>
+                     <y>140</y>
+                     <width>81</width>
+                     <height>20</height>
+                    </rect>
+                   </property>
+                   <property name="text">
+                    <string>Leader Change</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Player 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>953</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuview">
+    <property name="title">
+     <string>view</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menusetting">
+    <property name="title">
+     <string>setting</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuhelp">
+    <property name="title">
+     <string>help</string>
+    </property>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuview"/>
+   <addaction name="menusetting"/>
+   <addaction name="menuhelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
