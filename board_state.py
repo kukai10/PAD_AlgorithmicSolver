@@ -1,19 +1,18 @@
 def makeboard(height, width):
         "initailize the board as a double array, and each entry is first filled with 1"
+        return [[0, for _ in range(width)] for _ in range(height)]
+        """
         board = []
         for i in range(height):
             a = []
             for j in range(width): a.append(0)
             board.append(a)
         return board
+        """
 
 def printboard(board): # specialized function that prints the current state of the board
-        for i in board:
-            print("[ ", end ="")
-            for j, jth_item in enumerate(i):
-                print(jth_item[0][:2], end = "")
-                if j != width - 1: print(end = ", ")
-            print("]")
+        for row in board:
+            pint([row[i][0] for i in range(len(row))])
         print("*"*10)
 
 def search_by_distance(x,y, steps, board): #returns the orbs within a certain radius

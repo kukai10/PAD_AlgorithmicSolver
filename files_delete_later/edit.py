@@ -1,71 +1,12 @@
 
-def movemouse(letter): # inputs are u, d, l, or r; which moves the mouse by the distance between two orbs 
+def movemouse(letter, pixel_val, (move_time, sleep_time)): # inputs are u, d, l, or r; which moves the mouse by the distance between two orbs 
+    # mouse_dic = {"u": [0,-1], "d": [0,1], "l": [-1,0], "r": [1,0]}
     vector = mouse_dic[letter]
-    auto.moveRel(move_pixel*vector[0], move_pixel*vector[1] ,move_time)
+    auto.moveRel(pixel_val*vector[0], pixel_val*vector[1] ,move_time)
     time.sleep(sleep_time)
 
 def main():  
-    def locate_on_screen(visualize, name_of_template, prov_ratio1 = None, prov_ratio2 = None, icon = None): # finds template image in the screen shot 
-        #print("looking for ", name_of_template, " given the ratio", prov_ratio1, prov_ratio2)
-        foldername = "ImageFile\\" if icon == "Orb" else ""
-        if icon == "Orb": max_factor = [5,6]
-        elif icon == "screen_elements": max_factor = [7, 10]
-        else: max_factor = [4,4]
-        # get template image and convert to gray scale
-        template = cv2.imread(filepath+foldername+name_of_template, cv2.IMREAD_GRAYSCALE)
-        template_gray = cv2.Canny(template, 50, 200)
-        template_w_org, template_h_org = template_gray.shape[::-1] # initial height and width of template image 
-        found, threshold, maxVal = None, 0.5, 0 # prameters that affect the searching process
-        scale2 = np.linspace(0.5,1.0, 20)[::-1] if (prov_ratio2 == None) else np.linspace(min((1/prov_ratio2)-0.1, 0.8), min((1/prov_ratio2)+0.1, 1), 3)
-        scale1 = np.linspace(0.2, 1.0, 20)[::-1] if (prov_ratio1 == None) else np.linspace(min((1/prov_ratio1)-0.1,0.8), min((1/prov_ratio1)+0.1, 1), 3)
-        
-        # the following loops, chnages the scale of both screen shot and template, then it keeps the ratio that gave the highest matching percentage
-        # need two scale because templates can be sometimes too small to beign with, for example playing with a 2048x2048 pixel screen
-        for rescaleFactor1 in scale2:
-            resized_template = imutils.resize(template_gray, width = int(template_w_org*rescaleFactor1)) #keeps aspect ratio
-            template_w, template_h = resized_template.shape[::-1]
-            ratio2 = template_w_org/float(resized_template.shape[1])
-            for rescaleFactor in scale1:
-                resized = imutils.resize(board_image_gray, width = int(board_image_gray.shape[1] * rescaleFactor)) # resize screenshot
-                ratio1 = board_image_gray.shape[1] / float(resized.shape[1]) 
-                if resized.shape[0] < template_h*max_factor[0] or resized.shape[1] < template_w*max_factor[1]: break # break if template is bigger than scaled screenshot
-                edged = cv2.Canny(resized,50, 200)
-                result = cv2.matchTemplate(edged, resized_template, cv2.TM_CCOEFF_NORMED)#############template
-                (_, maxVal, _, maxLoc) = cv2.minMaxLoc(result) #we only care about the min val and locqq
-                if visualize: # if visualize is true show orginal image with borders around the things matching from the templates
-                        clone = np.dstack([edged, edged, edged])
-                        cv2.rectangle(clone, (maxLoc[0], maxLoc[1]), (maxLoc[0] +template_w, maxLoc[1] + template_h), (0, 0, 255), 2)
-                        cv2.imshow("Visualize", clone)
-                        cv2.waitKey(50) # stops for 0.5 seconds
-                if found is None or maxVal > found[0]:
-                    found, location = (maxVal, maxLoc, ratio1, ratio2), np.where(result>=0.4)
-                    if maxVal > threshold: 
-                        #print("max val is greater than ", threshold)
-                        break 
-            if maxVal > threshold: break
-        (_, maxLoc, ratio1, ratio2), positions = found, []
-        # end of loop
-        for pt in zip(*location[::-1]): # loop through the position of found templates and make a list with required fields
-            start_loc, end_loc =(int(pt[0]*ratio1), int(pt[1]*ratio1)), (int((pt[0]*ratio1)+(template_w_org*ratio1/ratio2)), int((pt[1]*ratio1)+(template_h_org*ratio1/ratio2)))
-            positions.append([list(start_loc), list(end_loc)])
-            cv2.rectangle(board_image,start_loc, end_loc , (0,0,255), 2)
-        if positions == []: return (None, None, None) # if nothing was found
-        if visualize == True:
-            cv2.imshow("board_image", board_image)
-            cv2.waitKey(100)
-        return (ratio1, ratio2, filter_pos(positions)) # return the ratios with highest threshold and the position of the templates
-
-    def filter_pos(arr): 
-        # from a list of position arrays, remove items that are overcounted, my method of looping over two scaling ratios can cause same objects to be overcounted
-        # this function is really just a safety measure, this function rarely finds overlapping objects
-        temp_list = []
-        for p in range(len(arr)-1):
-                        for k in range(p+1,len(arr)):
-                            if abs(arr[p][0][0]-arr[k][0][0]) < 5 and abs(arr[p][0][1]-arr[k][0][1]) < 5:
-                                    if k not in temp_list: temp_list.append(k)
-        if temp_list != []:
-            for s in reversed(sorted(temp_list)): del arr[s] # a bit of soring and organizing
-        return arr
+    
             
     def search_for_orbs(visualize):
         open_new_board()
@@ -96,11 +37,6 @@ def main():
             arr.append(temp_a)
         return arr
 
-    def open_new_board(): 
-        global board_image, board_image_gray
-        board_image = cv2.imread(filepath+filename)
-        board_image_gray = cv2.cvtColor(board_image, cv2.COLOR_BGR2GRAY)
-
     def normalize_pos(temp_list): 
         """
         get array with pixel position, convert it's position value into consecutive integers 
@@ -126,7 +62,7 @@ def main():
     visualize = True # option to visualize the actions occuring between the start to the end
     visualize = False
     move_mouse = False
-    mouse_dic = {"u": [0,-1], "d": [0,1], "l": [-1,0], "r": [1,0]}
+  
     screen_x, screen_y = auto.size()
     ########################    main     ###########################
     movement = ""
@@ -196,7 +132,7 @@ def find_combined_path(S_list, D_list):
     for destination in D_list:
         pass
 
-def switch_orb(coor_a, coor_b):
+def switch_orb(coor_a, coor_b): # dont know if this works
     printboard(board)
     c1, c2 = getcolor(coor_a[0], coor_a[1]), getcolor(coor_b[0], coor_b[1])
     board[coor_a[1]][coor_a[0]][0] = c2

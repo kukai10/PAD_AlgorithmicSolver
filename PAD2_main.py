@@ -41,7 +41,6 @@ def find_potential_mover(orb_position):# from the list of orbs, we find potentia
 def movemouse():
     auto.moveRel(10, 10,0.2)
 
-
 def create_partitions(total, num, remainder, input_list): # recursive function, return all posible way to partition the integer input and all sequeneces are monotonically decreasing
     # total is the number we have left, num is the next value that we will extract from totals, remainder, input list is the sequence we have so far
     if total == num == remainder == 0: return [input_list] #returns the sequence if all parameters reach the ground state
@@ -51,6 +50,10 @@ def create_partitions(total, num, remainder, input_list): # recursive function, 
             else: return create_partitions(total-num, num, remainder-num, input_list + [num]) + create_partitions(total, num-1, remainder+1, input_list) #first entry point of recursion
     # called if num >= remainder, meaning the number we want to extract is greater than or equal to the remaninder 
     return create_partitions(total-num, remainder, 0, input_list+[num]) + create_partitions(total, num-1, remainder+1, input_list) #skips by two to be able to have two recursive calls
+
+def main():
+    pass
+
 
 
 if __name__=="__main__":    
