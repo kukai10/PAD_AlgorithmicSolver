@@ -50,6 +50,7 @@ def search_for_orbs(current_dir, filename, visualize):
     # initializing the variables
     orb_pos_list, temp_list = [], []
     current_ratio1, current_ratio2 = None, None
+    height, width = 5, 6
 
     # for each item in list_priority, we use the locate_on_screen function to find the specific object in the picture
     for orb_filename in list_priority[0]:
@@ -61,13 +62,15 @@ def search_for_orbs(current_dir, filename, visualize):
                 temp_list.append([orb_filename, object_location[0], object_location[1]])
     list_len, arr = len(temp_list), []
     print("code found", len(temp_list), "orbs on screen")
+    
     if list_len in [20, 30, 42]:
         height, width = math.floor(list_len**.5) , math.ceil(list_len**.5)
     else:print("cannot find all orbs or is mistaking something on the screen") 
+    
     temp_list.sort(key = lambda entry: entry[1][1])
-    for i in range(height):
-        temp_a = [temp_list[k] for k in range(i*width, width*(i+1))]
-        temp_a.sort(key = lambda entry: entry[1][0])
+    for i in range(height): # maybe able to sort it within the list
+        temp_a = [temp_list[k] for k in range(i*width, width*(i+1))].sort(key = lambda entry: entry[1][0])
+        #temp_a.sort
         arr.append(temp_a)
     return arr
 
