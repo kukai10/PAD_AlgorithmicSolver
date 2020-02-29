@@ -5,12 +5,18 @@ import pygame
 import math
 import pyautogui as auto
 
-scriptpath, filepath = os.path.realpath(__file__), "" # Get the file path to the screenshot image to analize 
-for i in range(1,len(scriptpath)+1):
-    if scriptpath[-i] == "\\":
-        scriptpath = scriptpath[0:-i]
-        break
-if os.getcwd() != scriptpath: filepath = scriptpath + "\\"
+def get_cd():
+    """
+    uses the os.path function to get the filename and the absolute path to the current directory
+    Also does a primative check to see if the path is correct, there has been instances where the CD was different, hence the check.
+    """
+    scriptpath, filepath = os.path.realpath(__file__), "" # Get the file path to the screenshot image to analize 
+    for i in range(1,len(scriptpath)+1):
+        if scriptpath[-i] == "\\":
+            scriptpath = scriptpath[0:-i]
+            break
+    if os.getcwd() != scriptpath: filepath = scriptpath + "\\"
+    return scriptpath, filepath
 
 def virtual_game_loop():
     quit_game = False

@@ -5,38 +5,7 @@ def movemouse(letter, pixel_val, (move_time, sleep_time)): # inputs are u, d, l,
     auto.moveRel(pixel_val*vector[0], pixel_val*vector[1] ,move_time)
     time.sleep(sleep_time)
 
-def main():  
-    
-            
-    def search_for_orbs(visualize):
-        open_new_board()
-        list_priority = [["heart", "red", "blue", "green", "light", "dark"], 
-        ["poison_EX", "poison", "jammer"], 
-        ["heart_plus", "red_plus", "blue_plus", "green_plus", "light_plus", "dark_plus" ], 
-        ["heart_lock", "red_lock", "blue_lock", "green_lock", "light_lock", "dark_lock"],
-        ["heart_plus_lock", "red_plus_lock", "blue_plus_lock", "green_plus_lock", "light_plus_lock", "dark_plus_lock"]]
-        
-        orb_pos_list, temp_list = [], []
-        current_ratio1, current_ratio2 = None, None
-        for orb_filename in list_priority[0]:
-            ratio_position = locate_on_screen(visualize, orb_filename+".png", current_ratio1, current_ratio2, "Orb")
-            if current_ratio1 == None and ratio_position[0] != None:
-                current_ratio1, current_ratio2 = ratio_position[0], ratio_position[1]
-            if ratio_position[0] != None:
-                for object_location in ratio_position[2]: 
-                    temp_list.append([orb_filename, object_location[0], object_location[1]])
-        list_len, arr = len(temp_list), []
-        print("code found", len(temp_list), "orbs on screen")
-        if list_len in [20, 30, 42]:
-            height, width = math.floor(list_len**.5) , math.ceil(list_len**.5)
-        else:print("cannot find all orbs or is mistaking something on the screen") 
-        temp_list.sort(key = lambda entry: entry[1][1])
-        for i in range(height):
-            temp_a = [temp_list[k] for k in range(i*width, width*(i+1))]
-            temp_a.sort(key = lambda entry: entry[1][0])
-            arr.append(temp_a)
-        return arr
-
+def main():          
     def normalize_pos(temp_list): 
         """
         get array with pixel position, convert it's position value into consecutive integers 
@@ -48,14 +17,6 @@ def main():
         return temp_list
 
     heartname, filename = "heart.png", "TestFile/puzzleanddragonboard.png"
-    scriptpath, filepath = os.path.realpath(__file__), "" # Get the file path to the screenshot image to analize 
-    for i in range(1,len(scriptpath)+1):
-        if scriptpath[-i] == "\\":
-            scriptpath = scriptpath[0:-i]
-            break
-    if os.getcwd() != scriptpath: filepath = scriptpath + "\\" #current path, relative to root direcotory or C drive
-
-
     maxMoveStep = 140 #max number of moves teh algorithm will take
     puzzleMoveTime, sleepTime = 8.5, 0.001 #seconds
     movePixel, moveTime= None, puzzleMoveTime/maxMoveStep
