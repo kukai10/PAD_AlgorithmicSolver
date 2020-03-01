@@ -36,8 +36,10 @@ def search_for_orbs(current_dir, filename, visualize):
     If the total number of orbs is consistent with the number of a n x n+1 grid, i.e. 24, 30, 42, then the search is complete.
     if the number of the board is not 24, 30, or 42, then the search function wasn't able to pick up on an orb or the board is not completely in the screenshot.
     """
+
     # we get the reference to the object that stores the screenshot in both color and gray scale
     board_img, board_gray_img = open_new_board(current_dir, filename)
+
     # list_priority is a 2d array that stores the name of the file excluding the format (.png)
     # first array has the highest priority, meaning it stores the orbs that are most likely to be on the screensht image
     # then as we go to the 2nd list and 3rd list and so on, the probability of those orbs showing up will decrease 
@@ -67,10 +69,11 @@ def search_for_orbs(current_dir, filename, visualize):
         height, width = math.floor(list_len**.5) , math.ceil(list_len**.5)
     else:print("cannot find all orbs or is mistaking something on the screen") 
     
+    # sort the list by the height of the orbs, then (for a 5x6 board) the orbs stored in index 0-5, 6-11, 12-17, ... will be grouped by their heights
     temp_list.sort(key = lambda entry: entry[1][1])
-    for i in range(height): # maybe able to sort it within the list
+    # then for each row, we will sort them by their x value so that the orbs are stored in the same position as the screenshot
+    for i in range(height):
         temp_a = [temp_list[k] for k in range(i*width, width*(i+1))].sort(key = lambda entry: entry[1][0])
-        #temp_a.sort
         arr.append(temp_a)
     return arr
 
