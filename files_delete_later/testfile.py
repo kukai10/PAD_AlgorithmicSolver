@@ -21,8 +21,9 @@ b = [[['green', (0, 0)], ['dark',  (1, 0)], ['light', (2, 0)], ['dark',  (3, 0)]
      [['dark',  (0, 3)], ['light', (1, 3)], ['red',   (2, 3)], ['heart', (3, 3)], ['light', (4, 3)], ['red',   (5, 3)]],
      [['red',   (0, 4)], ['dark',  (1, 4)], ['light', (2, 4)], ['red',   (3, 4)], ['dark',  (4, 4)], ['blue',  (5, 4)]]]
 
-y = search_board(b, "red")
 
+
+y = search_board(b, "red")
 x = search_board1(b, "red")
 print(y)
 print(x)
