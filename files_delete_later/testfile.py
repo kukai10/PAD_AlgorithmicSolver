@@ -27,3 +27,7 @@ y = search_board(b, "red")
 x = search_board1(b, "red")
 print(y)
 print(x)
+
+
+if 3: print(3)
+if 0: print(0)
