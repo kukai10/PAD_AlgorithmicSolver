@@ -60,7 +60,10 @@ I don't care if I get cited when this project is used online, please give credit
 ---
 <a id = "dependencies"></a> 
 ### Dependencies
-
+ - CV2
+ - pygame
+ - numpy
+ - PyAutoGui
 ---
 <a id = "instalation"></a> 
 ### Installation
