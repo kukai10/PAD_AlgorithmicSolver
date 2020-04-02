@@ -5,9 +5,10 @@ PAD-AS
 
 
 ## Updates and important info: 
-### The android emulator, NOX, doesnt support the new update of PAD, so wait few weeks for the new PAD to be compatible.
+- The android emulator, NOX, doesnt support the new update of PAD, so wait few weeks for the new PAD to be compatible.
 
 ---
+
  Languages: [English](README.md), [日本語/Japanese](README.jp.md)
  - [General and Getting Started](#getting-started)
      - [Motivation for the Project](#intro)
