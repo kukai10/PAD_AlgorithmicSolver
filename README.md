@@ -26,6 +26,7 @@ PAD-AS
 
 --- 
 <a id = "getting-started"></a> 
+
 ## General and Getting Started
 This program is an automated puzzle solver that works on any computer.  The solver will take screenshots and search for a PAD screen and it will play the game using the 
 
@@ -51,6 +52,7 @@ gif of solver
 
 ---
 <a id = "intro"></a> 
+
 ### Motivation for the Project
 This project was started because many people, myself included, are not able to utilize 2-player mode; reasons for this is because they don't have a second phone, or no friends who plays the JP version, or because its late at night and everyone is asleep, etc.
 I knew that there are emulators on that can run PAD, I use [NOX](), however unless your computer is touchscreen, there's no easy way of manipulating the board.  After learning some python, I made this my first personal project and I believe there are many people who are in the same shoes as me, so I made this public.
@@ -59,6 +61,7 @@ I don't care if I get cited when this project is used online, please give credit
 
 ---
 <a id = "dependencies"></a> 
+
 ### Dependencies
  - CV2
  - pygame
@@ -66,11 +69,13 @@ I don't care if I get cited when this project is used online, please give credit
  - PyAutoGui
 ---
 <a id = "instalation"></a> 
+
 ### Installation
 
 
 ---
 <a id = "how-does-it-work"></a> 
+
 ## How Does PAD_AlgorithmicSolver Work?
  - 1.) Take screenshot, checks if a board exist
     - Visualizing it is optional
