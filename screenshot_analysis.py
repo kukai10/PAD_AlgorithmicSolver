@@ -112,7 +112,8 @@ def locate_on_screen(filepath, filename, board_img, board_gray_img, visualize=Fa
     max_factor = [5,6] if icon == "Orb" else ( [7, 10] if icon == "screen_elements" else [4, 4])
 
     # get template image and convert to gray scale
-    template_gray = cv2.Canny(cv2.imread(filepath+foldername+filename, cv2.IMREAD_GRAYSCALE), 50, 200)
+    template_gray = cv2.Canny(cv2.imread(filepath+foldername+filename, cv2.IMREAD_GRAYSCALE),
+    
     template_w_org, template_h_org = template_gray.shape[::-1] # initial height and width of original template image 
     found, threshold = None, 0.5 # prameters that affect the searching process
     maxVal = 0 # the current known highest match value 
