@@ -51,8 +51,30 @@ def create_partitions(total, num, remainder, input_list): # recursive function, 
     # called if num >= remainder, meaning the number we want to extract is greater than or equal to the remaninder 
     return create_partitions(total-num, remainder, 0, input_list+[num]) + create_partitions(total, num-1, remainder+1, input_list) #skips by two to be able to have two recursive calls
 
+def recursive_change(total, progress = [], numbers_allowed = [200, 100, 50, 20, 10, 5, 2, 1]):
+    """
+        a generator that breaks any number into a monotonically decreasing seqeunence, 
+        you can specify the values of the "changes" by modifying numbers_allowed 
+    """
+    if total == 0: # if we dont need to break up the number then we're finished with this branch
+        yield progress
+    # copying the list because we need to modify it
+    copy_of_list = numbers_allowed[:]
+    # iterate over the numbers_allowed and claim that the current number is the greatest value in the sequence and every value after it is monotonically decreasing  
+    for next_big_number in numbers_allowed:
+        if not next_big_number > total: 
+            for a in recursive_change(total-next_big_number,progress+[next_big_number], copy_of_list): 
+                yield a
+            # finished claiming that next_big_number is the greatest so remove it
+            copy_of_list.remove(next_big_number)
+
+
 def main():
-    pass
+    x = list(recursive_change(200))
+    #print(x)
+    print(len(x))
+
+
 
 
 
